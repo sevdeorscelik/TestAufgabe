@@ -1,72 +1,38 @@
-# Getting Started with Create React App
+# Test Aufgabe
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Aufgabenstellung:
 
-## Available Scripts
+## Teil 1
+Erstelle ein Fenster, das auf Desktop wie im Screen 1-Startbildschirm-Desktop.png und auf einem
+Handy wie im Screen 2-Startbildschirm-Mobil.png aussieht.
+• Das Hintergrundfoto befindet sich im Anhang.
+• Bitte wähle aus der Font Awesome Bibliothek passende Symbole aus. Sie sollen den Icons in
+den Screens ähnlich sein.
+• verwendeten Farbcodes sind
+- blauer Farbcode = #007AAD
+- roter Farbcode = #AD325D
 
-In the project directory, you can run:
+## Teil 2
+Auf den Screens 3-Dropdown-Menü-Desktop.png und 4-Dropdown-Menü-Mobil.png siehst du die ge-
+öffnete Version eines Dropdown-Menüs.
+• Alle Dropdown-Menüs sollen sich öffnen und schließen lassen.
+• Für den Menüpunkt „E-Mail-Adresse ändern“ soll der Inhalt wie im Screen angezeigt werden.
+• Für alle anderen Menüpunkte ist kein Inhalt notwendig.
 
-### `npm start`
+## Teil 3
+Nach einem Klick auf den Button "E-MAIL-ADRESSE ÄNDERN" soll sich ein Popup-Fenster öffnen, das
+siehst du im Screens 5-Popup-Desktop.png und 6-Popup-Mobil.png.
+• Nach einem Klick auf den Button "SPEICHERN", sollen beide Input Felder überprüft werden.
+• Es sollen drei Zustände ermittelt werden
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- eins oder beide Felder nicht ausgefüllt
+- beide Felder ausgefüllt aber nicht gleich
+- beide Felder stimmen überein
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+• Je nach Zustand soll eine Flash-Message ausgegeben werden. Diese Meldung soll entspre-
+chend farblich hinterlegt sein.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# TestAufgabe
-# TestAufgabe
+### Folgende Frameworks sollen möglichst benutzt werden.
+• jQuery oder React
+• Font Awesome
+• Bootstrap
