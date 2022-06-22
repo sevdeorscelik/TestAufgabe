@@ -9,7 +9,7 @@ const DropdownMenu = () => {
             number: 'One',
             icon: 'fa-envelope',
             title: 'E-Mail-Benachrichtigungen verwalten',
-            content: 'Placeholder content for this accordion, which is intended to demonstrate the class. This is the first item`s accordion body.'
+            content: 'Bildirimleri yönetmek mi istiyorsun? Bildirim ayarlarinizi istediğiniz zaman buradan değiştirebilirsiniz.'
         },
         {
             number: 'Two',
@@ -21,19 +21,19 @@ const DropdownMenu = () => {
             number: 'Three',
             icon: 'fa-lock',
             title: 'Passwort ändern ',
-            content: 'Placeholder content for this accordion, which is intended to demonstrate the class. This is the third item`s accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.'
+            content: 'Sifrenizi degistirmek mi istiyorsunuz ? Sifrenizi istediğiniz zaman buradan değiştirebilirsiniz.'
         },
         {
             number: 'Four',
             icon: 'fa-sticky-note',
             title: 'Onlinedarstellung verwalten',
-            content: 'Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item`s accordion body.'
+            content: 'Hier können Sie Onlinedarstellung verwalten.'
         },
         {
             number: 'Five',
             icon: 'fa-times-circle',
             title: 'Benutzerkonto löschen',
-            content: 'Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item`s accordion body.'
+            content: 'Hier können Sie Ihre Benutzerkonto löschen.'
         }
 
     ]
