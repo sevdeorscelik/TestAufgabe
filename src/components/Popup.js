@@ -14,8 +14,12 @@ const Popup = () => {
     const validateEmail = (email1, email2) => {
         if (email1.length === 0 || email2.length === 0) {
             return { valid: false, status:'danger', msg: "Bitte füllen Sie beide Felder aus!" }
+        }  else if (!email1.includes('@') || !email2.includes('@')){
+            return { valid: false, status:'warning', msg: "Bitte geben Sie gültige E-Mail-Adresse an! " }
+        } else if (!email1.includes('.') || !email2.includes('.')){
+            return { valid: false, status:'warning', msg: "Bitte geben Sie gültige E-Mail-Adresse an! " }
         } else if (email1 !== email2) {
-            return { valid: false, status:'warning', msg: "Leider, beide Felder müssen gleich sein! " }
+            return { valid: false, status:'warning', msg: "Beide Felder müssen gleich sein! " }
         } else {
             return { valid: true, status:'success', msg: "Super, beide Felder stimmen überein!" }
         }
@@ -50,7 +54,6 @@ const Popup = () => {
     }, [userEmailRepeat])
 
   
-
     return (
 
         <div className="Popup modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
