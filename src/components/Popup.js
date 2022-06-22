@@ -25,13 +25,6 @@ const Popup = () => {
     useEffect(() => {
 
         setEmailValid(validateEmail(userEmail, userEmailRepeat))
-
-
-
-        setTimeout(() => {
-            setAlert(false)
-        }, 3000);
-        setAlert(true)
         
     }, [userEmail, userEmailRepeat])
 
@@ -43,6 +36,18 @@ const Popup = () => {
             setFormValid(false)
         }
     }, [emailValid])
+
+
+    
+
+    useEffect(() => {
+
+        setTimeout(() => {
+            setAlert(false)
+        }, 3000);
+        setAlert(true)
+        
+    }, [userEmailRepeat])
 
   
 
@@ -65,7 +70,7 @@ const Popup = () => {
 
                             </div>
                             <div className="mb-3">
-                                <input type="email" value={userEmailRepeat} name="emailRepeat"  onChange={(e) => setUserEmailRepeat(e.target.value)} className="form-control" id="recipient-name" placeholder='Neue E-Mail-Adresse wiederholen' />
+                                <input type="email" value={userEmailRepeat} name="emailRepeat" onChange={(e) => setUserEmailRepeat(e.target.value)} className="form-control" id="recipient-name" placeholder='Neue E-Mail-Adresse wiederholen' />
                                 
                               {alert && (<div class={`alert alert-${emailValid.status} mt-3 text-center`} role="alert">{emailValid.msg}</div>) }
                             </div>
