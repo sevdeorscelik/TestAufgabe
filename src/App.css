@@ -1,12 +1,13 @@
 .App {
-    font-family: Arial, Helvetica, sans-serif;   
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
-.Header{
+
+
+.Header {
     background-image: url('/public/img/Header.png');
     background-position: bottom;
-    width: 100%;
     height: 22rem;
     background-size: cover;
 }
@@ -19,7 +20,7 @@
     color: #AD325D;
 }
 
-.bg-red{
+.bg-red {
     background-color: #AD325D;
 }
 
@@ -44,7 +45,7 @@
 
 .DropdownMenu {
     margin-top: 6rem;
-    
+
 }
 
 .accordion-button {
@@ -56,6 +57,59 @@
 
 .accordion-button:after {
     background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 50 320 512" fill="%23AD325D"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"/></svg>') !important;
- 
+}
+
+
+
+/*Mobile*/
+
+@media screen and (max-width: 425px) {
+
+
+    .Header {
+        background-image: none;
+        background: rgb(106, 166, 200);
+        background: linear-gradient(0deg, rgba(106, 166, 200, 1) 7%, rgba(0, 122, 173, 1) 100%);
+        width: 100%;
+        height: 15rem ;
+        margin-bottom: 0 !important;
+    
+    }
+
+   
+    .user-icon {
+        font-size: 5rem;
+    
+    }
+
+    .user-container{
+       flex-direction: row !important; 
+       top: 30%;
+       gap: 3rem !important;
+       
+    }
+
+    .user-name{
+        color: #EAF3FF !important;
+    }
+
+    .accordion{
+        width: 100% !important;
+        padding-top: 2rem ;
+        border-radius: 2rem 2rem 0 0 !important;
+        background-color: white;
+    }
+
+    .DropdownMenu {
+        margin-top: 0rem;
+        background: rgb(106, 166, 200);
+        
+    
+    }
+
+    .btn-submit{
+        width: 90% !important;
+    }
+    
 
 }

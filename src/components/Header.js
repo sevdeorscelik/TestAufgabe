@@ -3,7 +3,7 @@ import React from "react"
 const Header = () => {
     return (
         
-            <div className='Header position-relative d-flex justify-content-center mb-5'>
+            <div className='Header position-relative d-flex justify-content-center align-items-center mb-5 '>
 
                 <div className='position-absolute d-flex flex-column justify-content-center align-items-center user-container'>
 
@@ -17,7 +17,7 @@ const Header = () => {
 
                     </div>
 
-                    <p className='fs-4 fw-bold color-blue'>devel oper</p>
+                    <p className='fs-4 fw-bold color-blue mb-0 user-name'>devel oper</p>
 
                 </div>
             </div>

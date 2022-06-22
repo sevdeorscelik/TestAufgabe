@@ -9,7 +9,7 @@ const DropdownMenu = () => {
             number: 'One',
             icon: 'fa-envelope',
             title: 'E-Mail-Benachrichtigungen verwalten',
-            content: 'Bildirimleri yönetmek mi istiyorsun? Bildirim ayarlarinizi istediğiniz zaman buradan değiştirebilirsiniz.'
+            content: 'Möchten Sie Benachrichtigungen verwalten? Sie können Ihre Benachrichtigungseinstellungen jederzeit hier ändern.'
         },
         {
             number: 'Two',
@@ -21,7 +21,7 @@ const DropdownMenu = () => {
             number: 'Three',
             icon: 'fa-lock',
             title: 'Passwort ändern ',
-            content: 'Sifrenizi degistirmek mi istiyorsunuz ? Sifrenizi istediğiniz zaman buradan değiştirebilirsiniz.'
+            content: 'Möchten Sie Ihr Passwort ändern? Hier können Sie Ihr Passwort jederzeit ändern.'
         },
         {
             number: 'Four',
@@ -41,17 +41,17 @@ const DropdownMenu = () => {
 
     return (
         <div className='DropdownMenu d-flex flex-column justify-content-center align-items-center '>
-            <div class="accordion accordion-flush w-50 " id="accordionFlushExample">
+            <div className="accordion accordion-flush w-50 " id="accordionFlushExample">
                 {items.map((item, index) => {
                     return (
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id={`flush-heading${item.number}`}>
-                                <div class="accordion-button collapsed fs-5" data-bs-toggle="collapse" data-bs-target={`#flush-collapse${item.number}`} aria-expanded="false" aria-controls={`flush-collapse${item.number}`}>
+                        <div className="accordion-item">
+                            <h2 className="accordion-header" id={`flush-heading${item.number}`}>
+                                <div className="accordion-button collapsed fs-5" data-bs-toggle="collapse" data-bs-target={`#flush-collapse${item.number}`} aria-expanded="false" aria-controls={`flush-collapse${item.number}`}>
                                     <i className ={`fas ${item.icon} me-2 color-blue`}></i><span>{item.title}</span>
                                 </div>
                             </h2>
-                            <div id={`flush-collapse${item.number}`} class="accordion-collapse collapse" aria-labelledby={`flush-heading${item.number}`} data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">
+                            <div id={`flush-collapse${item.number}`} className="accordion-collapse collapse" aria-labelledby={`flush-heading${item.number}`} data-bs-parent="#accordionFlushExample">
+                                <div className="accordion-body">
                                     {item.content}
                                 </div>
                             </div>
