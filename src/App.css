@@ -48,6 +48,11 @@
 
 }
 
+.accordion{
+    width: 100%;
+    max-width: 850px;
+}
+
 .accordion-button {
     background-color: transparent !important;
     color: black !important;
@@ -63,57 +68,32 @@
 
 /*Mobile*/
 
-@media screen and (max-width: 425px) {
-
-
-    .Header {
+@media screen and (max-width: 575px){
+    .Header{
         background-image: none;
         background: rgb(106, 166, 200);
         background: linear-gradient(0deg, rgba(106, 166, 200, 1) 7%, rgba(0, 122, 173, 1) 100%);
-        width: 100%;
-        height: 15rem ;
-        margin-bottom: 0 !important;
-    
+        height: 15rem;
     }
-
-   
     .user-icon {
-        font-size: 6rem;
-    
+        font-size: 6.5rem;
     }
-
     .user-container{
-       flex-direction: row !important; 
-       top: 30%;
-       gap: 3rem !important;
-       
+        top: 30%;
     }
-
     .user-name{
         color: #EAF3FF !important;
     }
-
     .accordion{
-        width: 100% !important;
         padding-top: 2rem ;
         border-radius: 2rem 2rem 0 0 !important;
         background-color: white;
     }
-
-    .accordion-button{
-        font-size: 1.1rem !important;
-    }
-
     .DropdownMenu {
-        margin-top: 0rem;
+        margin-top: 0rem !important;
         background: rgb(106, 166, 200);
-        
     
     }
 
-    .btn-submit{
-        width: 90% !important;
-    }
     
-
 }
