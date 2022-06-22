@@ -41,12 +41,12 @@ const DropdownMenu = () => {
 
     return (
         <div className='DropdownMenu d-flex flex-column justify-content-center align-items-center '>
-            <div className="accordion accordion-flush " id="accordionFlushExample">
+            <div className="accordion accordion-flush w-100 " id="accordionFlushExample">
                 {items.map((item, index) => {
                     return (
                         <div className="accordion-item">
                             <h2 className="accordion-header" id={`flush-heading${item.number}`}>
-                                <div className="accordion-button collapsed fs-6 fs-sm-5" data-bs-toggle="collapse" data-bs-target={`#flush-collapse${item.number}`} aria-expanded="false" aria-controls={`flush-collapse${item.number}`}>
+                                <div className="accordion-button collapsed fs-6 fs-md-5  bg-transparent text-dark" data-bs-toggle="collapse" data-bs-target={`#flush-collapse${item.number}`} aria-expanded="false" aria-controls={`flush-collapse${item.number}`}>
                                     <i className ={`fas ${item.icon} me-2 color-blue`}></i><span>{item.title}</span>
                                 </div>
                             </h2>
