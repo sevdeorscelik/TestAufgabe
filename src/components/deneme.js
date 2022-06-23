@@ -52,28 +52,3 @@ const PopUp = (props) => {
 
 export default PopUp;
 
-/*
-<form>
-    <div className="mb-3">
-      <input type="email" name="email" className="form-control" id="recipient-name" placeholder='Neue E-Mail-Adresse' />
-    </div>
-    <div className="mb-3">
-       <input type="email" name="emailRepeat" className="form-control" id="recipient-name" placeholder='Neue E-Mail-Adresse wiederholen' />
-    </div>
-</form>
-*/
-
-
-/*
-<Field id="email" placeholder="Neue E-Mail-Adresse" className="w-100 mb-4 mt-5 custom-input px-2" name="email" type="email" />
-{ errors.email && touched.email ? <div className="custom-error">{errors.email}</div> : null }
-
-<Field id="emailConfirm" placeholder="Neue E-Mail-Adresse wiederholen" className="w-100 mb-4 custom-input px-2" name="emailConfirm" type="email" />
-{ errors.emailConfirm && touched.emailConfirm ? <div className="custom-error">{errors.emailConfirm}</div> : null }
-
-<button className="w-100 mb-5 mt-4 custom-input submit-button" type="submit">SPEICHERN</button>
-*/
-
-/*
-{alert && (<div class={`alert alert-${emailValid.status} mt-3 text-center`} role="alert">{emailValid.msg}</div>) }
-*/

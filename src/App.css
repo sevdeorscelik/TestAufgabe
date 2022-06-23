@@ -14,7 +14,7 @@
 }
 
 .color-red {
-    color: #AD325D;
+    color: #AD325D !important;
 }
 
 .bg-red {
@@ -63,6 +63,15 @@
 
 .border-none:focus{
     border: solid .7px #C6C8DA !important;
+}
+
+
+.btn:focus{
+    box-shadow: none !important;    
+}
+
+.cursor{
+    cursor: pointer;
 }
 
 /*Mobile*/
