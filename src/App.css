@@ -74,6 +74,18 @@
     cursor: pointer;
 }
 
+
+.SuccessAlert{
+    width: 100%;
+    max-width: 300px;
+    position: fixed;
+    
+    z-index: 2;
+    top: 35%;  
+
+}
+
+
 /*Mobile*/
 
 @media screen and (max-width: 767px){

@@ -52,3 +52,19 @@ const PopUp = (props) => {
 
 export default PopUp;
 
+/*
+ {
+                                            (values.email.length !== 0 && values.emailConfirm.length !== 0) && (!errors.email || !errors.emailConfirm ) 
+                                                ? <button type="submit" ref={closeBtn} className='btn btn-submit text-white p-2 pe-5 ps-5 fw-bold bg-red w-75' data-bs-dismiss="modal" aria-label="Close">SPEICHERN</button>
+                                                : <button type="submit" ref={closeBtn} className='btn btn-submit text-white p-2 pe-5 ps-5 fw-bold bg-red w-75' >SPEICHERN</button>
+                                        }
+*/
+
+/*
+{
+    (errors.email || errors.emailConfirm)
+        ? (<button type="submit" ref={closeBtn} className='btn btn-submit text-white p-2 pe-5 ps-5 fw-bold bg-red w-75' >SPEICHERN</button>)
+        : (<button type="submit" ref={closeBtn} className='btn btn-submit text-white p-2 pe-5 ps-5 fw-bold bg-red w-75' data-bs-dismiss="modal" aria-label="Close">SPEICHERN</button>)
+
+}
+*/

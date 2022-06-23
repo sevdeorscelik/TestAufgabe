@@ -54,34 +54,43 @@ const Popup = (props) => {
                                     console.log(document.getElementById("aktuel-email").value);
                                     document.getElementById("aktuel-email").value = newEmail;
 
+                                    values.email = ""
+                                    values.emailConfirm = ""
                                 }, 500);
-
                             }}
                         >
 
-                            {({ errors, touched }) => (
-
+                            {({ errors, touched, values }) => (
                                 <Form >
+                                    {console.log(values)}
 
                                     <div className="mb-3">
                                         <Field id="email" placeholder="Neue E-Mail-Adresse" className="form-control border-none" name="email" type="email" />
-                                        {errors.email && touched.email ? <div className="alert alert-danger mt-2 p-1 text-center"> {errors.email}</div> : null}
+                                        {errors.email && touched.email
+                                            ? (errors.email.includes('gültige')
+                                                ? (<div className="alert alert-primary mt-2 p-1 text-center"> {errors.email}</div>)
+                                                : (<div className="alert alert-danger mt-2 p-1 text-center"> {errors.email}</div>))
+                                            : null}
 
                                     </div>
                                     <div className="mb-3">
                                         <Field id="emailConfirm" placeholder="Neue E-Mail-Adresse wiederholen" className="form-control border-none" name="emailConfirm" type="email" />
-                                        {errors.emailConfirm && touched.emailConfirm ? <div className="alert alert-danger mt-2 p-1 text-center" >{errors.emailConfirm}</div> : null}
+                                        {errors.emailConfirm && touched.emailConfirm
+                                            ? (errors.emailConfirm.includes('gleich'))
+                                                ? (<div className="alert alert-warning mt-2 p-1 text-center" >{errors.emailConfirm}</div>)
+                                                : (<div className="alert alert-danger mt-2 p-1 text-center" >{errors.emailConfirm}</div>)
+                                            : null}
                                     </div>
 
                                     <div className="d-flex justify-content-center mt-2 mb-5">
 
                                         {
-                                        errors.email || errors.emailConfirm 
-                                        ? <button type="submit" ref={closeBtn} className='btn btn-submit text-white p-2 pe-5 ps-5 fw-bold bg-red w-75' >SPEICHERN</button> 
-                                        : <button type="submit" ref={closeBtn} className='btn btn-submit text-white p-2 pe-5 ps-5 fw-bold bg-red w-75' data-bs-dismiss="modal" aria-label="Close">SPEICHERN</button>
+                                            (values.email.length !== 0 && values.emailConfirm.length !== 0) && (!errors.email && !errors.emailConfirm)
+                                                ? <button type="submit" ref={closeBtn} className='btn btn-submit text-white p-2 pe-5 ps-5 fw-bold bg-red w-75' data-bs-dismiss="modal" aria-label="Close">SPEICHERN</button>
+                                                : <button type="submit" ref={closeBtn} className='btn btn-submit text-white p-2 pe-5 ps-5 fw-bold bg-red w-75' >SPEICHERN</button>
                                         }
-
                                     </div>
+
 
                                 </Form>
                             )}

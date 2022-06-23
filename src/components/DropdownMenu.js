@@ -1,7 +1,11 @@
 import React, { useState } from "react"
 import EMailÄndernContent from "./EMailÄndernContent";
+import SuccessAlert from "./SuccessAlert";
 
 const DropdownMenu = () => {
+
+    const [alert, setAlert] = useState(false)
+
 
 
     const items = [
@@ -15,7 +19,7 @@ const DropdownMenu = () => {
             number: 'Two',
             icon: 'fa-at',
             title: 'E-Mail-Adresse ändern',
-            content: <EMailÄndernContent />
+            content: <EMailÄndernContent alert={alert} setAlert={setAlert}/>
         },
         {
             number: 'Three',
@@ -39,10 +43,9 @@ const DropdownMenu = () => {
     ]
 
    
-
-
     return (
         <div className='DropdownMenu d-flex flex-column justify-content-center align-items-center '>
+           { alert ? <SuccessAlert/> : null}
             <div className="accordion accordion-flush w-100 " id="accordionFlushExample">
                 {items.map((item, index) => {
                     return (
