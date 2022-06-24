@@ -1,12 +1,11 @@
 import React, { useState } from "react"
 import EMailÄndernContent from "./EMailÄndernContent";
 import SuccessAlert from "./SuccessAlert";
+import '../css/dropDownMenu.css'
 
 const DropdownMenu = () => {
 
     const [alert, setAlert] = useState(false)
-
-
 
     const items = [
         {
@@ -52,7 +51,8 @@ const DropdownMenu = () => {
                         <div className="accordion-item" key={index}>
                             <h2 className="accordion-header" id={`flush-heading${item.number}`}>
                                 <div className="accordion-button collapsed fs-6 fs-md-5  bg-transparent text-dark" data-bs-toggle="collapse" data-bs-target={`#flush-collapse${item.number}`} aria-expanded="false" aria-controls={`flush-collapse${item.number}`}>
-                                    <i className={`fas ${item.icon} me-2 color-blue`}></i><span>{item.title}</span>
+                                    <i className={`fas ${item.icon} me-2 color-blue`}></i>
+                                    <span>{item.title}</span>
                                 </div>
                             </h2>
                             <div id={`flush-collapse${item.number}`} className="accordion-collapse collapse" aria-labelledby={`flush-heading${item.number}`} data-bs-parent="#accordionFlushExample">

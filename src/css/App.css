@@ -1,0 +1,53 @@
+.App {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.color-blue {
+    color: #007AAD;
+}
+
+.color-red {
+    color: #AD325D !important;
+}
+
+.bg-red {
+    background-color: #AD325D;
+}
+
+.border-none{
+    box-shadow: none !important;
+
+}
+
+.border-none:focus{
+    border: solid .7px #C6C8DA !important;
+}
+
+.btn:focus{
+    box-shadow: none !important;    
+}
+
+.btn{
+    height: 50px !important;
+    border-radius: 7px;
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+.input::placeholder{
+    font-size: .95rem;
+}
+
+
+@media screen and (max-width: 767px){
+   
+    .btn{
+        font-size: .85rem;
+    }
+
+    .btn-submit{
+        width: 100% !important;
+    }
+}

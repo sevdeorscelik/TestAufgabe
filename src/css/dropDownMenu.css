@@ -1,0 +1,36 @@
+
+.DropdownMenu {
+    margin-top: 6rem;
+}
+
+.accordion{
+    max-width: 850px;
+}
+
+.accordion-button {
+    cursor: pointer;
+}
+
+.accordion-button:after {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 50 320 512" fill="%23AD325D"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"/></svg>') !important;
+    background-position: center !important;
+    background-size: .7rem !important;
+    
+}
+
+
+/*Mobile*/
+
+@media screen and (max-width: 767px){
+   
+    .accordion{
+        padding-top: 2rem ;
+        border-radius: 2rem 2rem 0 0 !important;
+        background-color: white;
+    }
+    .DropdownMenu {
+        margin-top: 0rem !important;
+        background: rgb(106, 166, 200);
+    
+    }
+}

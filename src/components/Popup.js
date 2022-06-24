@@ -11,7 +11,6 @@ const Popup = (props) => {
         emailConfirm: Yup.string().oneOf([Yup.ref('email')], 'Beide Felder müssen gleich sein!').required('Bitte füllen Sie beide Felder aus!')
     });
 
-
     const { errors, touched, values, handleSubmit, handleChange } = useFormik({
         initialValues: {
             email: '',
@@ -70,14 +69,12 @@ const Popup = (props) => {
     };
 
 
-
     if ((values.email !== values.emailConfirm) || (!values.email.includes('@') || !values.email.includes('.') || !values.emailConfirm.includes('@') || !values.emailConfirm.includes('.'))) {
         if (!showModal ) {
             values.email = ""
             values.emailConfirm = ""
         }
     }
-
 
     return (
 
