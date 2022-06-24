@@ -1,9 +1,6 @@
 import React from "react";
-
 import { useRef, useEffect, useState } from "react";
-
 import { Formik, Field, Form, useFormik } from 'formik';
-
 import * as Yup from 'yup';
 
 
@@ -22,8 +19,6 @@ const Popup = (props) => {
         },
         onSubmit: (values) => {
 
-            console.log('form submit oldu');
-
             const newValues = JSON.stringify(values, null, 2);
             const newEmail = JSON.parse(newValues).email;
 
@@ -38,9 +33,7 @@ const Popup = (props) => {
         validationSchema: SignupSchema
 
     })
-    console.log(values);
-
-
+   
 
     const closeBtn = useRef(null);
     const modal = useRef(null);
