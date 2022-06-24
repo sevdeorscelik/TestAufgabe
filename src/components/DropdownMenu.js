@@ -60,7 +60,7 @@ const DropdownMenu = () => {
                                     {item.content}
                                 </div>
                                 
-                                <i  className="accordion-button collapsed fas fa-angle-up w-100 mt-3 mt-md-5 text-center fs-4 color-red cursor bg-transparent " data-bs-toggle="collapse" data-bs-target={`#flush-collapse${item.number}`} aria-expanded="false" aria-controls={`flush-collapse${item.number}`}></i>
+                                <i  className="accordion-button collapsed fas fa-angle-up w-100 mt-2  text-center fs-5 color-red cursor bg-transparent " data-bs-toggle="collapse" data-bs-target={`#flush-collapse${item.number}`} aria-expanded="false" aria-controls={`flush-collapse${item.number}`}></i>
                             </div>
                         </div>
                     )

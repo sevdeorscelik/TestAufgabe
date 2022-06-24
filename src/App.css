@@ -70,8 +70,16 @@
     box-shadow: none !important;    
 }
 
+.btn{
+    height: 50px !important;
+}
+
 .cursor{
     cursor: pointer;
+}
+
+.input::placeholder{
+    font-size: .95rem;
 }
 
 
@@ -81,8 +89,8 @@
     position: fixed;
     
     z-index: 2;
-    bottom: 0; 
-    right: 0;
+    bottom: 1%; 
+    right: 1%;
 
 }
 

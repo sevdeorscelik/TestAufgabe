@@ -71,7 +71,7 @@ const Popup = (props) => {
 
 
 
-    if ((values.email !== values.emailConfirm) || (!values.email.includes('@') && !values.email.includes('.') && !values.emailConfirm.includes('@') && !values.emailConfirm.includes('.'))) {
+    if ((values.email !== values.emailConfirm) || (!values.email.includes('@') || !values.email.includes('.') || !values.emailConfirm.includes('@') || !values.emailConfirm.includes('.'))) {
         if (!showModal ) {
             values.email = ""
             values.emailConfirm = ""
@@ -86,10 +86,10 @@ const Popup = (props) => {
                 <div className="modal-content">
                     <div className="modal-header">
                         <h5 className="modal-title" id="exampleModalLabel">E-Mail-Adresse ändern</h5>
-                        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" className="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
 
-                    <div className="modal-body">
+                    <div className="modal-body ">
                         <p>
                             Bitte gib deine Repeate E-Mail-Adresse zweimal an. Deine alte E-Mail-Adresse wird damit für das Portal ungültig. Bei Angeboten oder Fragen werden wir dich künftig über die Repeate E-Mail-Adresse kontaktieren. Um wieder alle Funktionen des Portals nutzen zu können, musst du deine Repeate E-Mail-Adresse bestätigen.
                         </p>
@@ -100,7 +100,7 @@ const Popup = (props) => {
 
                                 <div className="mb-3">
 
-                                    <Field onChange={handleChange} value={values.email} id="email" ref={input1} placeholder="Neue E-Mail-Adresse" className="form-control border-none" name="email" type="email" />
+                                    <Field onChange={handleChange} value={values.email} id="email" ref={input1} placeholder="Neue E-Mail-Adresse" className="form-control border-none mt-4 input " name="email" type="email" />
 
                                     {errors.email && touched.email && showModal
                                         ? (errors.email.includes('gültige')
@@ -109,9 +109,9 @@ const Popup = (props) => {
                                         : null}
                                 </div>
 
-                                <div className="mb-3">
+                                <div className="mb-3 mt-4">
 
-                                    <Field onChange={handleChange} value={values.emailConfirm} id="emailConfirm" ref={input2} placeholder="Neue E-Mail-Adresse wiederholen" className="form-control border-none" name="emailConfirm" type="email" />
+                                    <Field onChange={handleChange} value={values.emailConfirm} id="emailConfirm" ref={input2} placeholder="Neue E-Mail-Adresse wiederholen" className="form-control border-none input" name="emailConfirm" type="email" />
 
                                     {errors.emailConfirm && touched.emailConfirm && showModal
 
@@ -128,9 +128,9 @@ const Popup = (props) => {
                                     {
                                         (values.email.length !== 0 && values.emailConfirm.length !== 0) && (!errors.email && !errors.emailConfirm)
 
-                                            ? <button type="submit" ref={closeBtn} className='btn btn-submit text-white p-2 pe-5 ps-5 fw-bold bg-red w-75' data-bs-dismiss="modal" aria-label="Close">SPEICHERN</button>
+                                            ? <button type="submit" ref={closeBtn} className='btn btn-submit text-white p-2 pe-5 ps-5 fw-bold bg-red w-75 mt-5 mb-3' data-bs-dismiss="modal" aria-label="Close">SPEICHERN</button>
 
-                                            : <button type="submit" ref={closeBtn} className='btn btn-submit text-white p-2 pe-5 ps-5 fw-bold bg-red w-75' >SPEICHERN</button>
+                                            : <button type="submit" ref={closeBtn} className='btn btn-submit text-white p-2 pe-5 ps-5 fw-bold bg-red w-75 mt-5 mb-3' >SPEICHERN</button>
 
                                     }
 
