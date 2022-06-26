@@ -72,12 +72,3 @@ const DropdownMenu = () => {
 
 export default DropdownMenu;
 
-/**
- 
- const [closeClass, setCloseClass] = useState("accordion-collapse collapse")
-    const removeShow = () => {
-        // closeClass === "accordion-collapse collapse show" ? setCloseClass("accordion-collapse collapse") : closeClass
-       console.log(closeClass);        
-        
-    }
- */
