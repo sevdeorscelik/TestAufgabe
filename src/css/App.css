@@ -50,4 +50,12 @@
     .btn-submit{
         width: 100% !important;
     }
+
+    .SuccessAlert{
+       
+        font-size: .8rem;
+        padding: 0 1rem;
+        max-width: 40% !important;
+
+    }
 }
