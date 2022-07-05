@@ -49,9 +49,6 @@ const Popup = (props) => {
 
                             handleClose();
 
-                            console.log(document.getElementById("aktuel-email").value);
-                            console.log("Anfrage erfolgreich");
-
                         }}
                     >
                         {({ errors, touched }) => (
